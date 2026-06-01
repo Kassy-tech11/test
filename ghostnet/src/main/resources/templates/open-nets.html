@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Offene Geisternetze</title>
+</head>
+<body>
 
+<h1>Offene Geisternetze</h1>
+
+<a th:href="@{/report-net}">Neues Geisternetz melden</a>
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Breitengrad</th>
+        <th>Längengrad</th>
+        <th>Größe</th>
+        <th>Status</th>
+        <th>Aktion</th>
+    </tr>
+
+    <tr th:each="net : ${ghostNets}">
+        <td th:text="${net.id}"></td>
+        <td th:text="${net.latitude}"></td>
+        <td th:text="${net.longitude}"></td>
+        <td th:text="${net.estimatedSize}"></td>
+        <td th:text="${net.status}"></td>
+        <td>
+            <a th:href="@{/assign-net/{id}(id=${net.id})}">
+                Bergung übernehmen
+            </a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
