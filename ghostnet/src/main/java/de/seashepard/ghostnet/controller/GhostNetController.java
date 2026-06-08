@@ -1,10 +1,10 @@
-package de.sheasepherd.ghostnet.controller;
+package de.seashepard.ghostnet.controller;
 
-import de.sheasepherd.ghostnet.entity.GhostNet;
-import de.sheasepherd.ghostnet.entity.Rescuer;
-import de.sheasepherd.ghostnet.enums.GhostNetStatus;
-import de.sheasepherd.ghostnet.repository.GhostNetRepository;
-import de.sheasepherd.ghostnet.repository.RescuerRepository;
+import de.seashepard.ghostnet.entity.GhostNet;
+import de.seashepard.ghostnet.entity.Rescuer;
+import de.seashepard.ghostnet.enums.GhostNetStatus;
+import de.seashepard.ghostnet.repository.GhostNetRepository;
+import de.seashepard.ghostnet.repository.RescuerRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
