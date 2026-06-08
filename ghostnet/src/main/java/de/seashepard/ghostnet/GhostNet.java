@@ -1,4 +1,4 @@
-src/main/java/de/sheasepherd/ghostnet/entity/GhostNet.java
+src/main/java/de/seashepard/ghostnet/entity/GhostNet.java
 @ManyToOne
 private Rescuer rescuer;
 public Rescuer getRescuer() {
