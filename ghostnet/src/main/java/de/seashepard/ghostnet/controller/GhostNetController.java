@@ -46,16 +46,16 @@ public class GhostNetController {
         return "redirect:/open-nets";
     }
 
-    @GetMapping("/open-nets")
-    public String showOpenNets(Model model) {
-        List<GhostNetStatus> openStatuses = List.of(
-            GhostNetStatus.GEMELDET,
-            GhostNetStatus.BERGUNG_BEVORSTEHEND
+   @GetMapping("/open-nets")
+public String showOpenNets(Model model) {
+
+    model.addAttribute(
+            "ghostNets",
+            ghostNetRepository.findAll()
     );
-        model.addAttribute("ghostNets",
-                ghostNetRepository.findByStatus(GhostNetStatus.GEMELDET));
-        return "open-nets";
-    }
+
+    return "open-nets";
+}
 
     @GetMapping("/assign-net/{id}")
     public String showAssignForm(@PathVariable Long id, Model model) {
