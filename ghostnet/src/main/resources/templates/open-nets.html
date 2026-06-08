@@ -34,6 +34,11 @@
             </a>
         </td>
     </tr>
+    <form th:if="${net.status.name() == 'BERGUNG_BEVORSTEHEND'}"
+      th:action="@{/mark-recovered/{id}(id=${net.id})}"
+      method="post">
+    <button type="submit">Als geborgen melden</button>
+</form>
 </table>
 
 </body>
