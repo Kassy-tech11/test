@@ -16,5 +16,5 @@ import java.util.List;
 
 public interface GhostNetRepository extends JpaRepository<GhostNet, Long> {
 
-    List<GhostNet> findByStatus(GhostNetStatus status);
+     List<GhostNet> findByStatusIn(List<GhostNetStatus> statuses);
 }
