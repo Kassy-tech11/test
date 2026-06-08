@@ -1,4 +1,4 @@
-package de.sheasepherd.ghostnet.entity;
+package de.seashepard.ghostnet.entity;
 
 import jakarta.persistence.*;
 
