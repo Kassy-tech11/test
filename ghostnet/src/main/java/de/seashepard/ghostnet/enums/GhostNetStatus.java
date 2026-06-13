@@ -1,9 +1,0 @@
-enums/GhostNetStatus.java
-  import package de.seashepard.ghostnet.enums;
-
-public enum GhostNetStatus {
-    GEMELDET,
-    BERGUNG_BEVORSTEHEND,
-    GEBORGEN,
-    VERSCHOLLEN
-}
